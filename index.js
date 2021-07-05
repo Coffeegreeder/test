@@ -34,7 +34,7 @@ class Api
         /* Здесь ваш код */
         return template.replace(/%(\w+)%/g, (_, elem) => { // удаление символов кроме букв и цифр
             if (object[elem]) {
-                return encodeURIComponent(object[elem]); // изменяет все символы, за исключением латинских букв, цифр и "_"
+                return encodeURIComponent(object[elem]);
             } else {
                 return elem;
             }
